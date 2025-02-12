@@ -1,7 +1,8 @@
 # 🚀 Jornada de Estudos - Full Stack JR
 
 ## 📌 Sobre este Repositório
-Este repositório foi criado para documentar minha jornada de estudos para que qualquer um possa se tornar um **Desenvolvedor Full Stack Júnior**. Aqui, registro exercícios, desafios e aprendizados adquiridos ao longo do caminho.
+Este repositório foi criado para documentar como deve ser uma jornada de estudos para que qualquer um possa se tornar um **Desenvolvedor Full Stack Júnior**. 
+Aqui, registro exercícios, desafios e aprendizados adquiridos ao longo do caminho.
 
 ## 🏆 Objetivos
 - Aprimorar habilidades em **Python** e **JavaScript**.
