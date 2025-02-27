@@ -1,0 +1,75 @@
+Conceitos Básicos e Fluxo de Trabalho com Git
+Git é um sistema de controle de versão distribuído que permite aos desenvolvedores gerenciar alterações no código-fonte de projetos ao longo do tempo. Ele é essencial para facilitar o trabalho em equipe, permitindo que várias pessoas colaborem no mesmo projeto sem sobrescrever o trabalho uns dos outros.
+
+1. Repositório (Repository)
+Um repositório Git é onde o código-fonte é armazenado e versionado. Ele contém toda a história do projeto, incluindo versões antigas e alterações feitas ao longo do tempo. Pode ser local (no computador de um desenvolvedor) ou remoto (em servidores como GitHub ou GitLab).
+
+2. Commit
+Um commit é uma "foto" do código em um determinado ponto no tempo. Ele registra uma mudança específica no código, permitindo que você acompanhe o que foi modificado, quem fez a alteração e por quê. Cada commit possui uma mensagem explicando a mudança realizada.
+
+3. Branch (Ramo)
+O Git permite criar "branches" (ou ramos), que são versões paralelas do código. Trabalhar em uma branch separada permite que você desenvolva novas funcionalidades ou corrija bugs sem afetar a versão principal do projeto. A branch principal costuma ser chamada de main ou master.
+
+4. Merge
+O merge é o processo de unir as alterações feitas em uma branch de volta para a branch principal. Quando você finaliza o trabalho em uma branch e deseja integrar essas mudanças ao projeto principal, você faz um merge da sua branch para a branch principal.
+
+5. Clone
+O comando git clone permite copiar um repositório remoto para o seu computador. Isso cria uma cópia local do repositório com todo o seu histórico.
+
+6. Pull e Push
+git pull: Baixa as últimas alterações do repositório remoto para o repositório local.
+git push: Envia suas alterações locais para o repositório remoto.
+7. Checkout
+O comando git checkout permite alternar entre branches ou até mesmo acessar versões anteriores do código.
+
+Fluxo de Trabalho com Git
+O fluxo de trabalho básico com Git pode ser descrito da seguinte forma:
+
+Clone o Repositório: Se você ainda não tem o repositório localmente, use git clone para copiar o repositório remoto.
+
+bash
+Copiar
+git clone https://github.com/usuario/repositorio.git
+Crie uma Branch: Antes de começar a trabalhar em uma nova funcionalidade ou correção de bug, crie uma nova branch.
+
+bash
+Copiar
+git checkout -b nome-da-branch
+Faça as Alterações e Comite: Após modificar o código, você deve adicionar as alterações para o índice e fazer um commit.
+
+bash
+Copiar
+git add .
+git commit -m "Descrição do que foi alterado"
+Puxe as Alterações Remotas (opcional): Antes de enviar suas alterações, é bom garantir que você tenha as atualizações mais recentes do repositório remoto.
+
+bash
+Copiar
+git pull origin main
+Envie Suas Alterações (Push): Envie suas alterações para o repositório remoto para que outros possam ver e colaborar.
+
+bash
+Copiar
+git push origin nome-da-branch
+Abra um Pull Request (PR): Em plataformas como GitHub ou GitLab, após enviar sua branch para o repositório remoto, você pode abrir um Pull Request (PR) ou Merge Request (MR) para revisar e integrar suas alterações na branch principal.
+
+GitHub/GitLab
+GitHub e GitLab são plataformas de hospedagem de código que usam Git para controle de versão. Ambas oferecem funcionalidades extras, como colaboração em equipe, revisão de código, CI/CD e outras ferramentas de desenvolvimento.
+
+1. Pull Requests (GitHub) / Merge Requests (GitLab)
+Pull Request (PR) no GitHub e Merge Request (MR) no GitLab são usados para solicitar que as mudanças feitas em uma branch sejam integradas à branch principal.
+Eles servem como uma forma de revisão de código, permitindo que outras pessoas da equipe revisem as alterações antes de aprová-las e mesclá-las ao projeto principal.
+O PR/MR inclui a descrição das alterações, facilita a discussão sobre elas e oferece uma plataforma para revisão e feedback.
+2. Issues
+As issues são usadas para rastrear bugs, melhorias, ou discussões dentro de um repositório. Elas podem ser atribuídas a membros da equipe, categorizadas por etiquetas e associadas a pull requests ou commits.
+
+Exemplo de criação de uma issue no GitHub:
+Acesse a aba "Issues".
+Clique em "New Issue".
+Adicione título e descrição.
+Atribua à pessoa responsável (opcional).
+3. Fork
+Um fork é uma cópia independente de um repositório. Você pode fazer um fork de um repositório, modificar o código e depois criar um pull request (no GitHub) ou merge request (no GitLab) para enviar suas alterações ao repositório original.
+
+4. Revisão de Código
+Após a criação de um pull/merge request, os revisores (membros da equipe) podem deixar comentários, pedir ajustes ou até rejeitar as mudanças. Uma vez que a revisão esteja concluída, o PR/MR é aceito e o código é mesclado na branch principal.
