@@ -103,8 +103,11 @@ Aqui, registro exercícios, desafios e aprendizados adquiridos ao longo do camin
 ## 🎯 Progresso
 - ✅ Configuração do repositório no GitHub
 - ✅ Aprendendo Git e fluxo de Pull Requests
-- ⏳ Implementando API com FastAPI
+- ✅ Implementando API com FastAPI - Projeto [GIT - BACK-END](https://github.com/leocsbh007/SistemaGestaoSeguranca.git)
+  - **Video da apresentação no You Tube:** [BACK-END](https://youtu.be/MCgAKFN3tRk?si=Twhp72A2sdPZWIEI)
 - ⏳ Criando testes automatizados
+- ✅ Desenvolvendo frontend com HTML, CSS e Javascript Puro - Projeto [GIT - FRONT-END](https://github.com/leocsbh007/FrontSGS.git)
+  - **Video da apresentação no You Tube:** [FRONT-END](https://youtu.be/lRUphZ1NMWo?si=36MyD9LaKlrSG56y)
 - ⏳ Desenvolvendo frontend com React
 
 ## 💡 Como Contribuir
